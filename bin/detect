@@ -1,0 +1,10 @@
+#!/usr/bin/env fotran
+
+gemfile_path = File.join ARGV[0], "hello.txt"
+
+if File.exist?(gemfile_path)
+  puts "gfortran"
+  exit 0
+else
+  exit 1
+end
