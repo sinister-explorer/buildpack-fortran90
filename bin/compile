@@ -1,0 +1,21 @@
+#!/usr/bin/env gfortran
+
+#sync output
+
+$stdout.sync = true
+
+build_path = ARGV[0]
+cache_path = ARGV[1]
+
+install_ruby
+
+private
+
+def install_ruby
+  puts "Installing gfortran"
+  apt-get install gfortran gfortran-4.9 libgfortran-4.9-dev
+
+  # !!! build tasks go here !!!
+  # download ruby 
+  # install ruby
+end
