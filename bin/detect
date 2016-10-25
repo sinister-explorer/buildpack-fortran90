@@ -1,10 +1,8 @@
-#!/usr/bin/env fotran
+#!/usr/bin/env bash
+# bin/detect <build-dir>
 
-gemfile_path = File.join ARGV[0], "hello.txt"
-
-if File.exist?(gemfile_path)
-  puts "gfortran"
-  exit 0
+if [ -f $1]; then
+  echo "R" && exit 0
 else
-  exit 1
-end
+  echo "no" && exit 1
+fi
