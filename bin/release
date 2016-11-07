@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-# bin/release <build-dir>
+#!/bin/sh
 
-cat <<EOF
---- {}
-EOF
+# start jboss
+# the application should provision a war manually
+
+echo "done"
